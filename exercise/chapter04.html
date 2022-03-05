@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>chapter02</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>chapter04</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="02-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EB%B3%B8-%EB%8F%84%EA%B5%AC-%EC%9D%B5%ED%9E%88%EA%B8%B0">02 &#54028;&#51060;&#50028; &#44592;&#48376; &#46020;&#44396; &#51061;&#55176;&#44592;<a class="anchor-link" href="#02-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EA%B8%B0%EB%B3%B8-%EB%8F%84%EA%B5%AC-%EC%9D%B5%ED%9E%88%EA%B8%B0">&#182;</a></h1><h2 id="%EC%A0%9C2%EC%9E%A5-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C">&#51228;2&#51109; &#50672;&#49845;&#47928;&#51228;<a class="anchor-link" href="#%EC%A0%9C2%EC%9E%A5-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C">&#182;</a></h2>
+<h1 id="%EC%8B%A4%EC%A0%84-%EC%98%88%EC%A0%9C%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">&#49892;&#51204; &#50696;&#51228;&#47196; &#48176;&#50864;&#45716; &#54028;&#51060;&#50028; &#54532;&#47196;&#44536;&#47000;&#48141;<a class="anchor-link" href="#%EC%8B%A4%EC%A0%84-%EC%98%88%EC%A0%9C%EB%A1%9C-%EB%B0%B0%EC%9A%B0%EB%8A%94-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D">&#182;</a></h1><h2 id="%EC%A0%9C4%EC%9E%A5-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C">&#51228;4&#51109; &#50672;&#49845;&#47928;&#51228;<a class="anchor-link" href="#%EC%A0%9C4%EC%9E%A5-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14590,20 +14590,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AC%B8%EC%A0%9C1">&#47928;&#51228;1<a class="anchor-link" href="#%EB%AC%B8%EC%A0%9C1">&#182;</a></h3><p>다음 조건에 맞게 수량과 단가 변수를 만들어서 금액을 출력하시오.</p>
-<처리조건>
+<h3 id="%5B%EB%AC%B8%EC%A0%9C1%5D">[&#47928;&#51228;1]<a class="anchor-link" href="#%5B%EB%AC%B8%EC%A0%9C1%5D">&#182;</a></h3><p>다음 lst 변수를 대상으로 각 단계별로 list를 연산하시오.</p>
 
+<pre><code>&lt;각 단계별 출력 결과 예시&gt;
 
-<pre><code>&lt;조건1&gt; 수량 변수 : su = 5
-&lt;조건2&gt; 단가 변수 : dan = 800
-&lt;조건3&gt; su, dan 변수 주소 확인
-&lt;조건4&gt; 금액 계산 = 수량 x 단가
-&lt;조건5&gt; 기타 세부내용 &lt;출력 화면 예시&gt; 참고</code></pre>
-<p>&lt;출력 화면 예시&gt;</p>
+단계1 : [10, 1, 5, 2, 10, 1, 5, 2]
+단계2 : [10, 1, 5, 2, 10, 1, 5, 2, 20]
+단계3 : [1, 2, 1, 2]</code></pre>
+<div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># list 생성</span>
+</pre></div>
 
-<pre><code>su 주소 : 1858560352
-dan 주소 : 2241324818224
-금액 = 4000</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>단계1 : lst 원소를 2배 생성하여 result 변수에 저장 및 출력하기</p>
 
 </div>
 </div>
@@ -14616,12 +14623,9 @@ dan 주소 : 2241324818224
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">su</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="mi">800</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;su 주소 :&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">su</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;dan 주소 :&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="p">(</span><span class="n">dan</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;금액 =&#39;</span><span class="p">,</span> <span class="n">su</span> <span class="o">+</span> <span class="n">dan</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">lst</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;단계 1 :&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14643,9 +14647,7 @@ dan 주소 : 2241324818224
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>su 주소 : 4528335504
-dan 주소 : 4585176560
-금액 = 805
+<pre>단계 1 : [10, 1, 5, 2, 10, 1, 5, 2]
 </pre>
 </div>
 </div>
@@ -14661,13 +14663,7 @@ dan 주소 : 4585176560
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AC%B8%EC%A0%9C2">&#47928;&#51228;2<a class="anchor-link" href="#%EB%AC%B8%EC%A0%9C2">&#182;</a></h3><p>다음과 같은 2차 방정식을 파이썬 수식으로 코딩하고, y의 결과를 확인하시오.</p>
-<처리조건>
-
-<p><code>2차 방정식 :</code>$y = 2.5 * x^2 + 3.3 * x + 6$ (단 $x$ = 2 일때)</p>
-<p>&lt;출력 화면 예시&gt;</p>
-
-<pre><code>2차 방정식 결과 = 22.6</code></pre>
+<p>단계2 : lst의 처 번째 원소에 2를 곱하여 result 변수에 추가 및 출력하기</p>
 
 </div>
 </div>
@@ -14680,10 +14676,8 @@ dan 주소 : 4585176560
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mf">2.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mf">3.3</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">6</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;2차 방정식 결과 =&#39;</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lst</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;단계 1 :&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14705,7 +14699,7 @@ dan 주소 : 4585176560
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2차 방정식 결과 = 22.6
+<pre>단계 1 : [10, 1, 5, 2, 10, 1, 5, 2, 20]
 </pre>
 </div>
 </div>
@@ -14721,18 +14715,7 @@ dan 주소 : 4585176560
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AC%B8%EC%A0%9C3">&#47928;&#51228;3<a class="anchor-link" href="#%EB%AC%B8%EC%A0%9C3">&#182;</a></h3><p>지방(fat), 탄수화물(carbohydrate), 단백질(protein) 칼로리의 합계를 계산하는 프로그램을 작성하시오.</p>
-<처리조건>
-
-
-<pre><code>&lt;조건1&gt; 지방, 탄수화물, 단백질의 그램을 키보드로 입력받는다.
-&lt;조건2&gt; 총 칼로리 = 지방 * 9 + 단백질 * 4 + 탄수화물 * 4</code></pre>
-<p>&lt;출력 화면 예시&gt;</p>
-
-<pre><code>지방의 그램을 입력하세요 : 25
-탄수화물의 그램을 입력하세오 : 520
-단백질의 그램을 입력하세오 : 45
-총칼로리 : 2,485 cal</code></pre>
+<p>단계3 : result의 홀수 번째 원소만 result2 변수에 추가 및 출력하기</p>
 
 </div>
 </div>
@@ -14745,15 +14728,8 @@ dan 주소 : 4585176560
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fat</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;지방의 그램을 입력하세요 :&#39;</span><span class="p">))</span>
-<span class="n">carbohydrate</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;탄수화물의 그램을 입력하세오 :&#39;</span><span class="p">))</span>
-<span class="n">protein</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;단백질의 그램을 입력하세오 :&#39;</span><span class="p">))</span>
-<span class="n">cal</span> <span class="o">=</span> <span class="n">fat</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">+</span> <span class="n">carbohydrate</span> <span class="o">*</span> <span class="mi">4</span> <span class="o">+</span> <span class="n">protein</span> <span class="o">*</span> <span class="mi">4</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;지방의 그램을 입력하세요 :&#39;</span><span class="p">,</span> <span class="n">fat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;탄수화물의 그램을 입력하세요 :&#39;</span><span class="p">,</span> <span class="n">carbohydrate</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;단백질의 그램을 입력하세요 :&#39;</span><span class="p">,</span> <span class="n">protein</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;총칼로리 :&#39;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">{:,}</span><span class="s2"> cal&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cal</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result2</span> <span class="o">=</span> <span class="p">[</span><span class="n">value</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;단계 1 :&#39;</span><span class="p">,</span> <span class="n">result2</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14775,10 +14751,7 @@ dan 주소 : 4585176560
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>지방의 그램을 입력하세요 : 25
-탄수화물의 그램을 입력하세요 : 520
-단백질의 그램을 입력하세요 : 45
-총칼로리 : 2,485 cal
+<pre>단계 1 : [1, 2, 1, 2]
 </pre>
 </div>
 </div>
@@ -14794,20 +14767,15 @@ dan 주소 : 4585176560
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%EB%AC%B8%EC%A0%9C4">&#47928;&#51228;4<a class="anchor-link" href="#%EB%AC%B8%EC%A0%9C4">&#182;</a></h3><p>3개의 단어를 키보드로 입력 받아서 각 단어의 첫글자를 추출하여 단어의 약자를 출력하시오.</p>
-<처리조건>
+<h3 id="%5B%EB%AC%B8%EC%A0%9C2%5D-list-%EC%9B%90%EC%86%8C-%EC%B6%94%EA%B0%80-%EB%B0%8F-%EC%9A%94%EC%86%8C-%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0">[&#47928;&#51228;2] list &#50896;&#49548; &#52628;&#44032; &#48143; &#50836;&#49548; &#44160;&#49324;&#54616;&#44592;<a class="anchor-link" href="#%5B%EB%AC%B8%EC%A0%9C2%5D-list-%EC%9B%90%EC%86%8C-%EC%B6%94%EA%B0%80-%EB%B0%8F-%EC%9A%94%EC%86%8C-%EA%B2%80%EC%82%AC%ED%95%98%EA%B8%B0">&#182;</a></h3><p>A형) list 크기를 키보드로 입력 받은 후, 입력 받은 크기만큼 임의 숫자를 list에 추가하고, list의 크기를 출력하시오.</p>
 
+<pre><code>&lt;출력 결과 예시&gt;
 
-<pre><code>&lt;조건1&gt; 각 단어 변수(word1, word2, word3) 저장
-&lt;조건2&gt; 입력과 출력 구분선 : 문자열 연산
-&lt;조건3&gt; 각 변수의 첫 단어만 추출하여 변수(abbr) 저장</code></pre>
-<p>&lt;출력 화면 예시&gt;</p>
-
-<pre><code>첫번째 단어 : Korea
-두번째 단어 : Baseball
-세번째 단어 : Orag
-==============
-약자 : KBO</code></pre>
+vector 수 : 3
+4
+2
+5
+vector 크기 : 3</code></pre>
 
 </div>
 </div>
@@ -14820,16 +14788,17 @@ dan 주소 : 4585176560
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;첫번째 단어 :&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="n">word2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;두번째 단어 :&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="n">word3</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;세번째 단어 :&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span>
-<span class="n">word</span> <span class="o">=</span> <span class="n">word1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">word2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">word3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;vector 수 :&#39;</span><span class="p">))</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;첫번째 단어 :&#39;</span><span class="p">,</span> <span class="n">word1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;두번째 단어 :&#39;</span><span class="p">,</span> <span class="n">word2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;세번째 단어 :&#39;</span><span class="p">,</span> <span class="n">word3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;약자 :&#39;</span><span class="p">,</span> <span class="n">word</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vector 수 :&#39;</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">vector</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vector 크기 :&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14851,11 +14820,286 @@ dan 주소 : 4585176560
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>첫번째 단어 : Korea
-두번째 단어 : Baseball
-세번째 단어 : Orag
-====================
-약자 : KBO
+<pre>vector 수 : 3
+4
+2
+5
+vector 크기 : 3
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>B형) list 크기를 키보드로 입력 받은 후, 입력 받은 크기만큼 임의 숫자를 list에 추가한다. 이후 list에서 찾을 값을 키보드로 입력한 후 해당 값이 list에 있으면 "YES", 없으면 "NO"를 출력하시오.</p>
+
+<pre><code>&lt;출력 결과 예시&gt;
+
+vector 수 : 5
+1
+2
+3
+4
+5
+3
+YES</code></pre>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vector</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;vector 수 :&#39;</span><span class="p">))</span>
+<span class="n">lst</span> <span class="o">=</span> <span class="p">[]</span>   
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vector 수 :&#39;</span><span class="p">,</span> <span class="n">vector</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">vector</span><span class="p">):</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+    <span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+
+<span class="n">search</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">search</span><span class="p">)</span>
+
+<span class="n">match</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">search</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;YES&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NO&#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>vector 수 : 5
+1
+2
+3
+4
+5
+3
+YES
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%5B%EB%AC%B8%EC%A0%9C3%5D-list-%EB%82%B4%ED%8F%AC%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0">[&#47928;&#51228;3] list &#45236;&#54252;&#47484; &#51060;&#50857;&#54616;&#50668; &#47928;&#51088;&#50676; &#52376;&#47532;&#54616;&#44592;<a class="anchor-link" href="#%5B%EB%AC%B8%EC%A0%9C3%5D-list-%EB%82%B4%ED%8F%AC%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0">&#182;</a></h3><p>A형) message 변수를 대상으로 'spam' 원소는 1 'ham' 원소는 0으로 dummy 변수를 생성하시오.</p>
+<p><조건> list + for 형식 적용</p>
+
+<pre><code>&lt;출력결과 예시&gt;
+[1, 0, 1, 0, 1]</code></pre>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">]</span>
+<span class="n">dummy</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">if</span> <span class="n">msg</span> <span class="o">==</span> <span class="s1">&#39;spam&#39;</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">message</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dummy</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 0, 1, 0, 1]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>B형) message 변수를 대상으로 'spam' 원소만 추출하여 spam_list에 추가하시오.</p>
+<p><조건> list + for + if 형식 적용</p>
+
+<pre><code>&lt;출력결과 예시&gt;
+
+['spam', 'spam', 'spam']</code></pre>
+<div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">,</span> <span class="s1">&#39;ham&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">]</span>
+<span class="n">spam_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">msg</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">message</span> <span class="k">if</span> <span class="n">msg</span> <span class="o">==</span> <span class="s1">&#39;spam&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">spam_list</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;spam&#39;, &#39;spam&#39;, &#39;spam&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%5B%EB%AC%B8%EC%A0%9C4%5D-position-%EB%B3%80%EC%88%98%EB%A5%BC-%EB%8C%80%EC%83%81%EC%9C%BC%EB%A1%9C-%EC%A4%91%EB%B3%B5%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%A7%81%EC%9C%84%EC%99%80-%EC%A7%81%EC%9C%84%EB%B3%84-%EB%B9%88%EB%8F%84%EC%88%98%EB%A5%BC-%EC%B6%9C%EB%A0%A5%ED%95%98%EC%8B%9C%EC%98%A4.">[&#47928;&#51228;4] position &#48320;&#49688;&#47484; &#45824;&#49345;&#51004;&#47196; &#51473;&#48373;&#46104;&#51648; &#50506;&#51008; &#51649;&#50948;&#50752; &#51649;&#50948;&#48324; &#48712;&#46020;&#49688;&#47484; &#52636;&#47141;&#54616;&#49884;&#50724;.<a class="anchor-link" href="#%5B%EB%AC%B8%EC%A0%9C4%5D-position-%EB%B3%80%EC%88%98%EB%A5%BC-%EB%8C%80%EC%83%81%EC%9C%BC%EB%A1%9C-%EC%A4%91%EB%B3%B5%EB%90%98%EC%A7%80-%EC%95%8A%EC%9D%80-%EC%A7%81%EC%9C%84%EC%99%80-%EC%A7%81%EC%9C%84%EB%B3%84-%EB%B9%88%EB%8F%84%EC%88%98%EB%A5%BC-%EC%B6%9C%EB%A0%A5%ED%95%98%EC%8B%9C%EC%98%A4.">&#182;</a></h3>
+<pre><code>&lt;출력결과 예시&gt;
+
+중복되지 않은 직위 : ['사장', '과장', '대리', '부장']
+각 직위별 빈도수 : {'과장': 2, '부장': 1, '대리': 2, '사장': 1}</code></pre>
+<div class="highlight"><pre><span></span><span class="n">position</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;과장&#39;</span><span class="p">,</span> <span class="s1">&#39;부장&#39;</span><span class="p">,</span> <span class="s1">&#39;대리&#39;</span><span class="p">,</span> <span class="s1">&#39;사장&#39;</span><span class="p">,</span> <span class="s1">&#39;대리&#39;</span><span class="p">,</span> <span class="s1">&#39;과장&#39;</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">position</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;과장&#39;</span><span class="p">,</span> <span class="s1">&#39;부장&#39;</span><span class="p">,</span> <span class="s1">&#39;대리&#39;</span><span class="p">,</span> <span class="s1">&#39;사장&#39;</span><span class="p">,</span> <span class="s1">&#39;대리&#39;</span><span class="p">,</span> <span class="s1">&#39;과장&#39;</span><span class="p">]</span>
+
+<span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">position</span><span class="p">))</span>
+<span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">pos</span> <span class="ow">in</span> <span class="n">position</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">pos</span> <span class="ow">in</span> <span class="n">dic</span><span class="p">:</span>
+        <span class="n">dic</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">dic</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">pos</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+    <span class="k">pass</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;중복되지 않은 직위 :&#39;</span><span class="p">,</span> <span class="n">lst</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;각 직위별 빈도 수 :&#39;</span><span class="p">,</span> <span class="n">dic</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>중복되지 않은 직위 : [&#39;부장&#39;, &#39;과장&#39;, &#39;사장&#39;, &#39;대리&#39;]
+각 직위별 빈도 수 : {&#39;과장&#39;: 2, &#39;부장&#39;: 1, &#39;대리&#39;: 2, &#39;사장&#39;: 1}
 </pre>
 </div>
 </div>
