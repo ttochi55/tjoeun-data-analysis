@@ -1,0 +1,242 @@
+Enter password: ******
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 3
+Server version: 10.1.13-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2016, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use work;
+Database changed
+MariaDB [work]> create table goods(
+    -> code int primary key,
+    -> name varchar(20) not null,
+    -> su int,
+    -> dan int);
+Query OK, 0 rows affected (0.02 sec)
+
+MariaDB [work]> show tables;
++----------------+
+| Tables_in_work |
++----------------+
+| goods          |
++----------------+
+1 row in set (0.00 sec)
+
+MariaDB [work]> insert into goods values(1, '냉장고', 2, 850000);
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [work]> insert into goods values(2, '세탁기', 3, 550000);
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [work]>  insert into goods values(3, '전자레인지', 2, 350000);
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [work]>  insert into goods values(4, 'HDTV', 3, 150000);
+Query OK, 1 row affected (0.00 sec)
+
+MariaDB [work]> select * from goods;
++------+------------+------+--------+
+| code | name       | su   | dan    |
++------+------------+------+--------+
+|    1 | 냉장고     |    2 | 850000 |
+|    2 | 세탁기     |    3 | 550000 |
+|    3 | 전자레인지 |    2 | 350000 |
+|    4 | HDTV       |    3 | 150000 |
++------+------------+------+--------+
+4 rows in set (0.00 sec)
+
+MariaDB [work]> create user 'scott'@'localhost' identified by 'tiger';
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [work]> grant all privileges on work.* to 'scott'@'localhost';
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [work]> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+MariaDB [work]> show tables;
++----------------+
+| Tables_in_work |
++----------------+
+| bmi_tab        |
+| goods          |
++----------------+
+2 rows in set (0.00 sec)
+
+MariaDB [work]> select * from bmi_tab;
++--------+--------+--------+
+| height | weight | label  |
++--------+--------+--------+
+|    184 |     61 | thin   |
+|    189 |     56 | thin   |
+|    183 |     79 | normal |
+|    143 |     40 | normal |
+|    187 |     66 | normal |
+|    161 |     52 | normal |
+|    186 |     54 | thin   |
+|    144 |     57 | fat    |
+|    184 |     55 | thin   |
+|    165 |     76 | fat    |
+|    143 |     45 | normal |
+|    154 |     61 | fat    |
+|    159 |     57 | normal |
+|    177 |     45 | thin   |
+|    174 |     78 | fat    |
+|    140 |     80 | fat    |
+|    150 |     75 | fat    |
+|    141 |     47 | normal |
+|    186 |     57 | thin   |
+|    154 |     83 | fat    |
+|    141 |     65 | fat    |
+|    178 |     74 | normal |
+|    157 |     84 | fat    |
+|    175 |     56 | thin   |
+|    172 |     40 | thin   |
+|    170 |     69 | normal |
+|    143 |     64 | fat    |
+|    148 |     68 | fat    |
+|    161 |     56 | normal |
+|    176 |     77 | normal |
+|    142 |     60 | fat    |
+|    145 |     41 | normal |
+|    179 |     84 | fat    |
+|    164 |     80 | fat    |
+|    153 |     53 | normal |
+|    182 |     45 | thin   |
+|    167 |     49 | thin   |
+|    168 |     51 | thin   |
+|    155 |     40 | thin   |
+|    188 |     51 | thin   |
+|    159 |     44 | thin   |
+|    173 |     76 | fat    |
+|    168 |     64 | normal |
+|    142 |     51 | fat    |
+|    179 |     68 | normal |
+|    145 |     44 | normal |
+|    140 |     69 | fat    |
+|    162 |     77 | fat    |
+|    185 |     59 | thin   |
+|    174 |     50 | thin   |
+|    147 |     69 | fat    |
+|    145 |     41 | normal |
+|    149 |     68 | fat    |
+|    157 |     46 | normal |
+|    149 |     68 | fat    |
+|    178 |     55 | thin   |
+|    188 |     45 | thin   |
+|    151 |     55 | normal |
+|    141 |     47 | normal |
+|    174 |     60 | normal |
+|    189 |     69 | normal |
+|    140 |     61 | fat    |
+|    145 |     61 | fat    |
+|    141 |     66 | fat    |
+|    180 |     45 | thin   |
+|    180 |     62 | normal |
+|    161 |     53 | normal |
+|    149 |     41 | thin   |
+|    154 |     70 | fat    |
+|    166 |     66 | normal |
+|    144 |     65 | fat    |
+|    145 |     47 | normal |
+|    164 |     85 | fat    |
+|    159 |     73 | fat    |
+|    167 |     41 | thin   |
+|    171 |     47 | thin   |
+|    167 |     40 | thin   |
+|    185 |     50 | thin   |
+|    165 |     81 | fat    |
+|    167 |     62 | normal |
+|    171 |     41 | thin   |
+|    157 |     64 | fat    |
+|    145 |     63 | fat    |
+|    183 |     48 | thin   |
+|    142 |     54 | fat    |
+|    149 |     44 | normal |
+|    148 |     61 | fat    |
+|    159 |     63 | normal |
+|    190 |     76 | normal |
+|    184 |     49 | thin   |
+|    170 |     46 | thin   |
+|    153 |     69 | fat    |
+|    160 |     78 | fat    |
+|    166 |     40 | thin   |
+|    170 |     45 | thin   |
+|    157 |     50 | normal |
+|    143 |     82 | fat    |
+|    171 |     66 | normal |
+|    184 |     50 | thin   |
+|    161 |     67 | fat    |
++--------+--------+--------+
+100 rows in set (0.00 sec)
+
+MariaDB [work]> show tables;
++----------------+
+| Tables_in_work |
++----------------+
+| bmi_tab        |
+| goods          |
+| labels         |
++----------------+
+3 rows in set (0.00 sec)
+
+MariaDB [work]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| test               |
+| work               |
++--------------------+
+5 rows in set (0.00 sec)
+
+MariaDB [work]> use mysql;
+Database changed
+MariaDB [mysql]> show tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| column_stats              |
+| columns_priv              |
+| db                        |
+| event                     |
+| func                      |
+| general_log               |
+| gtid_slave_pos            |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| host                      |
+| index_stats               |
+| innodb_index_stats        |
+| innodb_table_stats        |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| roles_mapping             |
+| servers                   |
+| slow_log                  |
+| table_stats               |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transition_type |
+| user                      |
++---------------------------+
+30 rows in set (0.00 sec)
+
+MariaDB [mysql]> use test;
+Database changed
+MariaDB [test]> show tables;
+Empty set (0.00 sec)
+
+MariaDB [test]> use work
+Database changed
